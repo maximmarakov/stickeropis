@@ -19,9 +19,9 @@ class IndexPage extends Component {
                 </Head>
                 <h1 className={b('title')}>Печать Стикеров</h1>
                 <p className={b('descr')}>
-                  Это сервис для формирования листа со стикерами и возможностью печати.<br/>
+                  Это сервис для формирования листа со стикерами и возможностью печати.<br />
                   Набор стикеров формируется путем импорта из популярных трекеров задач (таких как Trello, GitHub Issues),
-                  из CSV-файла или вручную через специальную форму. <br/>
+                  из CSV-файла или вручную через специальную форму. <br />
                 </p>
 
                 <Menu />
@@ -32,17 +32,17 @@ class IndexPage extends Component {
                 </p>
 
                 <div className={b('template-button-wrap')}>
-                <Link href="print/template" passHref>
-                  <Button className={b('imageBtn')}>
-                    <img className={b(`image`)} src={`static/images/template.png`}/>
-                  </Button>
-                </Link>
+                    <Link href="print/template" passHref>
+                        <Button className={b('imageBtn')}>
+                            <img className={b(`image`)} src={`static/images/template.png`} />
+                        </Button>
+                    </Link>
                 </div>
 
                 <h2>Как это работает?</h2>
                 <p className={b('subtitle')}>Получение данных из сторонних сервисов</p>
                 <p className={b('descr')}>
-                  Выберите сервис трекинга задач из которого хотите импортировать данные.
+                  Выберите сервис трекинга задач, из которого хотите импортировать данные.
                   В зависимости от сервиса нужно заполнить параметры для импорта.
                   Далее — на страницу с фильтрацией и выбором задач для печати.
                   И после подтверждения — на страницу печати.

@@ -12,7 +12,7 @@ const b = classname('menu');
 
 class Menu extends Component {
     render() {
-        const items = ['trello', 'github', 'csv','form'];
+        const items = ['trello', 'github', 'csv','jira','form'];
 
         return (
           <div className={b()}>
