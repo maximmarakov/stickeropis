@@ -12,20 +12,24 @@ const b = classname('menu');
 
 class Menu extends Component {
     render() {
-        const items = ['csv'];
+        const items = ['trello', 'github', 'csv','form'];
 
         return (
-            <List className={b()}>
+          <div className={b()}>
+            <ul className={b('wrap')}>
                 {items.map(item => {
                     return (
-                        <ListItem key={item}>
+                        <li key={item} className={b(`menu-item`)}>
                             <Link href={`/${item}-config`} passHref>
-                                <Button variant="contained" color="secondary">{item}</Button>
+                              <Button className={b('imageBtn')}>
+                                <img className={b(`image`)} src={`static/images/${item}.png`}/>
+                              </Button>
                             </Link>
-                        </ListItem>
+                        </li>
                     );
                 })}
-            </List>
+            </ul>
+          </div>
         );
     }
 }

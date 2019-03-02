@@ -1,7 +1,30 @@
 .menu
 {
-    & + &
+  text-align: center;
+
+  &__wrap {
+    display: inline-block;
+    text-align: left;
+  }
+
+    &__menu-item
     {
-        margin: 10px 0 0;
+      cursor: pointer;
+      display: inline-block;
     }
+
+    &__imageBtn {
+      height: auto;
+      width: 200px;
+
+      border:1px solid #ccc; // рамка
+      background:#eaeaea; //фон
+      padding: .2em .75em; //отступы внутри
+      text-decoration: none; //убрать подчеркивание ссылки
+
+    }
+      &__image {
+        width: 100%;
+      }
+
 }
